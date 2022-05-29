@@ -11,13 +11,6 @@
 
 using namespace std;
 
-/*class exception {
-    exception(string new_exc) {
-        exc = new_exc;
-    }
-    string exc;
-};*/
-
 class Date {
 public:
     Date() {
@@ -57,7 +50,6 @@ bool operator<(const Date& lhs, const Date& rhs) {
 
 void ChekForDate(int& m, int& d) {
     if (m < 1 || m > 12) {
-        //string error = "Month value is invalid: " + to_string(m);
         throw invalid_argument("Month value is invalid: " + to_string(m));
     }
     else if (d < 1 || d > 31) {
@@ -208,7 +200,7 @@ int main()
             else if (cmd == "Print") {
                 db.Print();
             }
-            // Считайте команды с потока ввода и обработайте каждую
+            // Г‘Г·ГЁГІГ Г©ГІГҐ ГЄГ®Г¬Г Г­Г¤Г» Г± ГЇГ®ГІГ®ГЄГ  ГўГўГ®Г¤Г  ГЁ Г®ГЎГ°Г ГЎГ®ГІГ Г©ГІГҐ ГЄГ Г¦Г¤ГіГѕ
         }
     }
 
